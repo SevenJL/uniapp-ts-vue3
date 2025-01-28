@@ -12,6 +12,7 @@
 
 import { useMemberStore } from '@/stores'
 
+// TODO: 拼接请求地址
 const baseURL =
   'https://pcapi-xiaotuxian-front-devtest.itheima.net'
 
@@ -38,6 +39,7 @@ const httpInterceptor = {
     }
   },
 }
+//   5. 添加拦截器
 uni.addInterceptor('request', httpInterceptor)
 uni.addInterceptor('uploadFile', httpInterceptor)
 
